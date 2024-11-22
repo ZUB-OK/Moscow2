@@ -21,8 +21,8 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build docker image
-        run: docker build -t ghcr.io/zub-ok/Moscow2/student-node-395:latest ./node/
+        run: docker build -t ghcr.io/zub-ok/moscow2/student-node-395:latest ./node/
 
       - name: Push docker image
-        run: docker push ghcr.io/zub-ok/Moscow2/student-node-395:latest
+        run: docker push ghcr.io/zub-ok/moscow2/student-node-395:latest
         
